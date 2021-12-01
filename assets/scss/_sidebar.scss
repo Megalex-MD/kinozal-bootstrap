@@ -1,2 +1,15 @@
 @use "presets" as *;
 @use "mixins" as *;
+
+.left-sidebar {
+  margin-bottom: $gap-xl;
+}
+
+.films-slider {
+  border-radius: 4px;
+  overflow: hidden;
+
+  &__image {
+    width: 100%;
+  }
+}
