@@ -65,20 +65,204 @@
   <div class="container">
     <div class="row">
 
-      <div class="main col-lg-9 col-lg-push-3 col-md-8 col-md-push-4">Lorem ipsum dolor sit, amet consectetur
-        adipisicing elit. Tenetur libero incidunt itaque ex odio vel voluptatum maxime ipsam officia neque, reiciendis
-        quisquam architecto accusantium nesciunt perspiciatis sint quibusdam commodi inventore enim est exercitationem
-        consectetur repellat! Dolores, doloribus recusandae. Impedit voluptatibus temporibus soluta dolor corrupti earum
-        sequi aut! Eius facere debitis pariatur animi atque distinctio consequatur in minima tempora id dolor possimus
-        perferendis, ab vitae dolores itaque velit natus, dolorem illum? Delectus possimus molestiae odio repellat
-        labore praesentium beatae vero earum accusamus iste reiciendis, soluta maxime recusandae. Voluptatibus aut
-        perspiciatis, minus tempora adipisci reiciendis et quod accusantium, corporis atque laudantium beatae.</div>
+      <div class="main col-lg-9 col-lg-push-3 col-md-8 col-md-push-4">
+
+        <section class="site-search panel panel-info visible-sm visible-xs">
+          <div class="panel-heading">Поиск </div>
+          <div class="panel-body">
+            <form action="search">
+              <div class="input-group input-group-lg">
+                <input class="form-control " type="text" placeholder="Поиск по сайту">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">
+                    <span class="glyphicon glyphicon-search"></span></button>
+                </span>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <section class="user-login panel panel-info visible-sm visible-xs">
+          <div class="panel-heading">Пользователь </div>
+          <div class="panel-body">
+            <div>
+              <ul class="user-login__tabs nav nav-tabs" role="tablist">
+                <li role="presentation" class="active">
+                  <a href="#login-form-main" aria-controls="login-form-main" role="tab" data-toggle="tab">
+                    <span class="glyphicon glyphicon-log-in"></span></a>
+                </li>
+                <li role="presentation">
+                  <a href="#registration-form-main" aria-controls="registration-form-main" role="tab" data-toggle="tab">
+                    <span class="glyphicon glyphicon-user"></span>
+                  </a>
+                </li>
+              </ul>
+
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="login-form-main">
+                  <form action="login">
+                    <div class="form-group">
+                      <input class="form-control input-lg" type="text" placeholder="Логин">
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control input-lg" type="password" placeholder="Пароль">
+                    </div>
+                    <button class="btn btn-default btn-block btn-lg" type="button">Вход</button>
+                  </form>
+                </div>
+
+                <div role="tabpanel" class="tab-pane fade" id="registration-form-main">
+                  <form action="login">
+                    <div class="form-group">
+                      <input class="form-control input-lg" type="text" placeholder="Логин">
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control input-lg" type="password" placeholder="Пароль">
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control input-lg" type="email" placeholder="Email">
+                    </div>
+                    <button class="btn btn-default btn-block btn-lg" type="button">Регистрация</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="new-films">
+          <h1 class="new-films-title">Новые фильмы</h1>
+          <div class="new-films-row row">
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a href="">
+                  <img class="new-films-item__image" src="assets/img/films/1263242.jpg" alt="film">
+                  <div class="new-films-item__caption caption">
+                    <h3 class="new-films-item__tilte">Thumbnail label</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a href="">
+                  <img class="new-films-item__image" src="assets/img/films/1263242.jpg" alt="film">
+                  <div class="new-films-item__caption caption">
+                    <h3 class="new-films-item__tilte">Thumbnail label</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a href="">
+                  <img class="new-films-item__image" src="assets/img/films/1263242.jpg" alt="film">
+                  <div class="new-films-item__caption caption">
+                    <h3 class="new-films-item__tilte">Thumbnail label</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a href="">
+                  <img class="new-films-item__image" src="assets/img/films/1263242.jpg" alt="film">
+                  <div class="new-films-item__caption caption">
+                    <h3 class="new-films-item__tilte">Thumbnail label</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a href="">
+                  <img class="new-films-item__image" src="assets/img/films/1263242.jpg" alt="film">
+                  <div class="new-films-item__caption caption">
+                    <h3 class="new-films-item__tilte">Thumbnail label</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a href="">
+                  <img class="new-films-item__image" src="assets/img/films/1263242.jpg" alt="film">
+                  <div class="new-films-item__caption caption">
+                    <h3 class="new-films-item__tilte">Thumbnail label</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a href="">
+                  <img class="new-films-item__image" src="assets/img/films/1263242.jpg" alt="film">
+                  <div class="new-films-item__caption caption">
+                    <h3 class="new-films-item__tilte">Thumbnail label</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a href="">
+                  <img class="new-films-item__image" src="assets/img/films/1263242.jpg" alt="film">
+                  <div class="new-films-item__caption caption">
+                    <h3 class="new-films-item__tilte">Thumbnail label</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a href="">
+                  <img class="new-films-item__image" src="assets/img/films/1263242.jpg" alt="film">
+                  <div class="new-films-item__caption caption">
+                    <h3 class="new-films-item__tilte">Thumbnail label</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a href="">
+                  <img class="new-films-item__image" src="assets/img/films/1263242.jpg" alt="film">
+                  <div class="new-films-item__caption caption">
+                    <h3 class="new-films-item__tilte">Thumbnail label</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a href="">
+                  <img class="new-films-item__image" src="assets/img/films/1263242.jpg" alt="film">
+                  <div class="new-films-item__caption caption">
+                    <h3 class="new-films-item__tilte">Thumbnail label</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+            <article class="new-films-item col-lg-3 col-sm-4 col-xs-6">
+              <div class="new-films-item__thumbnail thumbnail">
+                <a href="">
+                  <img class="new-films-item__image" src="assets/img/films/1263242.jpg" alt="film">
+                  <div class="new-films-item__caption caption">
+                    <h3 class="new-films-item__tilte">Thumbnail label</h3>
+                  </div>
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+
+      </div>
 
       <div class="left-sidebar col-lg-3 col-lg-pull-9 col-md-4 col-md-pull-8">
 
         <div class="films-slider panel panel-info">
-
-          <div id="films-carousel" class="carousel slide" data-ride="carousel">
+          <div id="films-carousel" class="carousel slide hidden-sm hidden-xs" data-ride="carousel">
 
             <ol class="carousel-indicators">
               <li data-target="#films-carousel" data-slide-to="0" class="active"></li>
@@ -107,10 +291,9 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-
         </div>
 
-        <div class="site-search panel panel-info">
+        <div class="site-search panel panel-info hidden-sm hidden-xs">
           <div class="panel-heading">Поиск </div>
           <div class="panel-body">
             <form action="search">
@@ -125,7 +308,7 @@
           </div>
         </div>
 
-        <div class="user-login panel panel-info">
+        <div class="user-login panel panel-info hidden-sm hidden-xs">
           <div class="panel-heading">Пользователь </div>
           <div class="panel-body">
             <div>

@@ -117,3 +117,10 @@
 .thumbnail {
   transition: background-color 0.25s;
 }
+
+h1 {
+  font-size: 3rem;
+  font-family: $font-header;
+  margin: -10px 0 1em;
+  position: relative;
+}
