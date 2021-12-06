@@ -17,16 +17,6 @@
   position: relative;
   overflow: hidden;
 
-  &-title {
-    &::after {
-      position: absolute;
-      width: 100%;
-      margin: 0.85em 0 0 15px;
-      content: "";
-      border-bottom: 3px solid #f0ad4f;
-    }
-  }
-
   &-row {
     margin-right: -$gap-sm;
     margin-left: -$gap-sm;
@@ -71,11 +61,51 @@
   }
 }
 
-.top-week-title::before {
-  position: absolute;
-  left: 0;
-  width: 30px;
-  margin: 0.25em 0 0 0;
-  content: "";
-  border-bottom: 3px solid #f0ad4f;
+.movie-news {
+  position: relative;
+  overflow: hidden;
+}
+
+.movie-news-item {
+  h3 > a {
+    transition: color 0.25s;
+
+    @include xs-min {
+      font-size: 1.5rem;
+    }
+    @include xs {
+      font-size: 1.25rem;
+    }
+  }
+
+  .thumbnail {
+    margin-bottom: 0;
+    transition: background-color 0.25s;
+
+    img {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  &__text {
+    text-align: justify;
+  }
+  &__button {
+    float: right;
+    margin-bottom: 30px;
+  }
+}
+
+.movie-news-item:hover {
+  > h3 > a {
+    color: $color-accent;
+  }
+  .thumbnail {
+    border-color: $color-accent;
+    background-color: $color-accent;
+  }
+  .btn-warning {
+    background-color: $color-accent;
+  }
 }

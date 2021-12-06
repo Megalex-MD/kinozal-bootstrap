@@ -90,8 +90,25 @@ a:hover, a:focus {
   color: #df8a13;
 }
 
+h1::after,
+h2::after {
+  position: absolute;
+  width: 100%;
+  margin: 0.85em 0 0 15px;
+  content: "";
+  border-bottom: 3px solid #f0ad4f;
+}
+
 h2 {
   font-family: "PT Serif", serif;
+}
+h2::before {
+  position: absolute;
+  left: 0;
+  width: 30px;
+  margin: 0.25em 0 0 0;
+  content: "";
+  border-bottom: 3px solid #f0ad4f;
 }
 
 h3 {
@@ -138,14 +155,6 @@ h3 {
 .top-week {
   position: relative;
   overflow: hidden;
-}
-.new-films-title::after,
-.top-week-title::after {
-  position: absolute;
-  width: 100%;
-  margin: 0.85em 0 0 15px;
-  content: "";
-  border-bottom: 3px solid #f0ad4f;
 }
 .new-films-row,
 .top-week-row {
@@ -197,13 +206,43 @@ h3 {
   text-align: center;
 }
 
-.top-week-title::before {
-  position: absolute;
-  left: 0;
-  width: 30px;
-  margin: 0.25em 0 0 0;
-  content: "";
-  border-bottom: 3px solid #f0ad4f;
+.movie-news {
+  position: relative;
+  overflow: hidden;
+}
+
+.movie-news-item h3 > a {
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
+}
+.movie-news-item .thumbnail {
+  margin-bottom: 0;
+  -webkit-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+.movie-news-item .thumbnail img {
+  margin-right: auto;
+  margin-left: auto;
+}
+.movie-news-item__text {
+  text-align: justify;
+}
+.movie-news-item__button {
+  float: right;
+  margin-bottom: 30px;
+}
+
+.movie-news-item:hover > h3 > a {
+  color: #df8a13;
+}
+.movie-news-item:hover .thumbnail {
+  border-color: #df8a13;
+  background-color: #df8a13;
+}
+.movie-news-item:hover .btn-warning {
+  background-color: #df8a13;
 }
 
 .left-sidebar {
@@ -335,6 +374,9 @@ h3 {
   .header-logo__title {
     font-size: 3.5rem;
   }
+  .movie-news-item h3 > a {
+    font-size: 1.5rem;
+  }
 }
 @media (min-width: 768px) {
   .navbar-inverse .navbar-nav > li > a {
@@ -369,5 +411,8 @@ h3 {
   }
   .header-logo__title {
     font-size: 2.5rem;
+  }
+  .movie-news-item h3 > a {
+    font-size: 1.25rem;
   }
 }

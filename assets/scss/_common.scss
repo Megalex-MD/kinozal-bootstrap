@@ -27,6 +27,15 @@ h1 {
   }
 }
 
+h1::after,
+h2::after {
+  position: absolute;
+  width: 100%;
+  margin: 0.85em 0 0 15px;
+  content: "";
+  border-bottom: 3px solid #f0ad4f;
+}
+
 h2 {
   font-family: $font-header;
   @include xs-min {
@@ -36,6 +45,15 @@ h2 {
   @include xs {
     margin: 45px 0 30px 45px;
     font-size: 1.75rem;
+  }
+
+  &::before {
+    position: absolute;
+    left: 0;
+    width: 30px;
+    margin: 0.25em 0 0 0;
+    content: "";
+    border-bottom: 3px solid #f0ad4f;
   }
 }
 
