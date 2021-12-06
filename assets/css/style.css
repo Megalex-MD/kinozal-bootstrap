@@ -90,6 +90,10 @@ a:hover, a:focus {
   color: #df8a13;
 }
 
+h3 {
+  font-size: 1rem;
+}
+
 .header {
   margin-bottom: 80px;
 }
@@ -129,6 +133,17 @@ a:hover, a:focus {
 .new-films {
   margin-bottom: 80px;
 }
+.new-films-title {
+  position: relative;
+  overflow: hidden;
+}
+.new-films-title::after {
+  position: absolute;
+  width: 100%;
+  margin: 0.85em 0 0 15px;
+  content: "";
+  border-bottom: 3px solid #f0ad4f;
+}
 .new-films-row {
   margin-right: -7.5px;
   margin-left: -7.5px;
@@ -142,6 +157,16 @@ a:hover, a:focus {
 .new-films-item__thumbnail {
   margin-bottom: 0;
 }
+.new-films-item:hover .thumbnail {
+  border-color: #df8a13;
+  background-color: #df8a13;
+}
+.new-films-item:hover .thumbnail > a {
+  color: white;
+}
+.new-films-item:hover h3 {
+  color: #ffffff;
+}
 .new-films-item__image {
   width: 100%;
 }
@@ -151,6 +176,14 @@ a:hover, a:focus {
   white-space: nowrap;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
 }
 
 .left-sidebar {
