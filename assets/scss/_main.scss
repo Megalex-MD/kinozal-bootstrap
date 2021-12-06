@@ -12,13 +12,12 @@
   }
 }
 
-.new-films {
-  margin-bottom: $gap-xl;
+.new-films,
+.top-week {
+  position: relative;
+  overflow: hidden;
 
   &-title {
-    position: relative;
-    overflow: hidden;
-
     &::after {
       position: absolute;
       width: 100%;
@@ -70,4 +69,13 @@
       text-align: center;
     }
   }
+}
+
+.top-week-title::before {
+  position: absolute;
+  left: 0;
+  width: 30px;
+  margin: 0.25em 0 0 0;
+  content: "";
+  border-bottom: 3px solid #f0ad4f;
 }
