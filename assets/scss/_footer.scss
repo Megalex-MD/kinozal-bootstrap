@@ -2,28 +2,31 @@
 @use "mixins" as *;
 
 .footer {
-  padding-top: 45px;
-  color: #d5d5d5;
-  background-color: #232323;
+padding-top: $gap * 3;
+
+  color: $color-gray;
+  background-color: $color-dark;
 
   ul {
-    padding: 0;
+padding: 0;
+
     list-style: none;
   }
   a {
-    color: #6f6f6f;
+color: $color-gray-dark;
 
     &:hover {
-      color: #ffffff;
+color: $color-white;
     }
   }
 
   &-fifth {
-    margin: 20px 0;
+margin: 20px 0;
+
     text-align: center;
 
     a {
-      color: #d5d5d5;
+color: $color-gray;
     }
   }
 }
